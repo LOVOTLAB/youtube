@@ -5,7 +5,7 @@ void setup()
   Serial.begin(115200);
   Serial.println();
 
-  WiFi.begin("SSID", "0000000000");
+  WiFi.begin("SSID", "00000000");
 
   Serial.print("Connecting");
   while (WiFi.status() != WL_CONNECTED)
