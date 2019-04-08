@@ -8,7 +8,7 @@
 
 #include <ESP8266WiFi.h> // ESP 8266 와이파이 라이브러리
 #include <ESP8266HTTPClient.h> // HTTP 클라이언트
-#include <Adafruit_NeoPixel.h> // 네오픽셀 라이브러
+#include <Adafruit_NeoPixel.h> // 네오픽셀 라이브러리
 #define NUMPIXELS      8 // 네오픽셀 LED 수
 Adafruit_NeoPixel pixels = Adafruit_NeoPixel(NUMPIXELS, D2, NEO_GRBW + NEO_KHZ800); // 네오픽셀 객체
 
@@ -17,7 +17,7 @@ String key = "";
 String url = "http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getCtprvnMesureSidoLIst?sidoName=" + sido + "&searchCondition=HOUR&pageNo=1&numOfRows=200&ServiceKey=" + key;
 
 float so2, co, o3, no2, pm10, pm25 = 0; // 대기오염정보 데이터값
-int score = 0; // 대기오염점수 0-최고 6-최악
+int score = 0; // 대기오염점수 0-최고 7-최악
 
 void setup()
 {
