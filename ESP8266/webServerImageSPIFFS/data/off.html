@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html, body
+{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+div img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    div img {
+            min-width: 400px;
+            min-height: 400px;
+    }
+}
+</style>
+</head>
+<body bgcolor="#000000">
+<div>
+<a href="on.html"><img src="off.png"></a>
+</div>
+</body>
+</html>
